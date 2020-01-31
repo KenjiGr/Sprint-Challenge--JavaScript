@@ -5,7 +5,15 @@
   Use this pattern to create your objects: 
   object name, diet, weight, length, period
 */
-
+function dinosaur(object){
+  const tyrannosaurus ={
+    name: param1,
+    diet: param2,
+    weight: param3,
+    length: param4,
+    period: param5
+  }
+}
 // tyrannosaurus, carnivorous, 7000kg, 12m, Late Cretaceous
 
 // stegosaurus, herbivorous, 2000kg, 9m, Late Jurassic
