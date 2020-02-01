@@ -55,19 +55,54 @@ const graduates = [
   { id: 9, first_name: "Michail", university: "Universidad Católica de Ávila", email: "mrome8@shinystat.com" },
   { id: 10, first_name: "Hube", university: "Universitat Rovira I Virgili Tarragona", email: "hlethbrig9@foxnews.com" },
 ];
-
+function alphabetical(array){
+  let universities = [];
+  array.sort((a, b) => {
+    if (a.university > b.university){
+      return -1
+    } else if(a.university < b.university){
+      return -1
+    } else{
+      return 0
+    };
+  });
+  universities.push(array[i].university);
+}
 /* Request 1: Create a new array called universities that contains all the universities in the graduates array. This will be an array of strings.
 
 Once you have the new array created, sort the universities alphabetically and log the result. */
-const universities = [];
-console.log(universities);
+function getFields(input, field) {
+  var universities = [];
+  for (var i=0; i < input.length ; ++i)
+      universities.push(input[i][field]);
+  function alpha(array){
+    array.sort((a, b) => {
+  if (a > b){
+    return 1
+  } else if(a < b){
+    return -1
+  } else{
+    return 0
+  };
+return array
+});
+}
+  return universities;
+}
+ console.log(alpha(univerities));
 
+var result = getFields(graduates, "university");
+console.log(univerities)
 /* Request 2: Create a new array called contactInfo that contains both first name and email of each student. This will be an array of strings.
 
 The resulting contact information strings should have a space between the first name and the email, like this: 
 "Josh josh@example.com"
 
 Log the result of your new array. */
+function nameEmail(array){
+  let contactInfo = [];
+
+}
 const contactInfo = [];
 console.log(contactInfo);
 
